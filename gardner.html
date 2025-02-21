@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Gardener</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: #2E7D32;
+            color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .auth-buttons button {
+            margin-left: 10px;
+            padding: 8px 15px;
+            background-color: white;
+            color: #2E7D32;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .auth-buttons button:hover {
+            background-color: #ffffffc7;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(to right, #33a939, #b2ecb6);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .hero h2 {
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+        }
+
+        .search-bar {
+            display: inline-flex;
+            width: 60%;
+            margin-top: 20px;
+        }
+
+        .search-bar input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border-radius: 5px 0 0 5px;
+            border: none;
+        }
+
+        .search-bar button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #1e8c36;
+            color: white;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+
+        .search-bar button:hover {
+            background-color: #155a24;
+        }
+
+        /* Featured Gardeners Section */
+        .featured-gardeners {
+            padding: 40px 20px;
+            background-color: white;
+            text-align: center;
+        }
+
+        .featured-gardeners h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .gardener-profiles {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gardener-profile {
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            text-align: left;
+            transition: transform 0.2s;
+        }
+
+        .gardener-profile:hover {
+            transform: translateY(-5px);
+        }
+
+        .gardener-profile img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .gardener-profile h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .gardener-profile p {
+            margin-bottom: 8px;
+            font-size: 1rem;
+        }
+
+        .gardener-profile p strong {
+            color: #1e8c36;
+        }
+
+        .gardener-profile button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #1e8c36;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .gardener-profile button:hover {
+            background-color: #155a24;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2E7D32;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="log.jpg" alt="Urban Gardener Logo" class="logo-img">
+                <h1>Urban Gardening</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="get.in.touch.html">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button>Sign In</button>
+                <button>Sign Up</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero">
+            <h1>Find the Perfect Gardener for Your Urban Oasis</h1>
+            <h2>Book professional gardeners and purchase gardening products through our easy-to-use platform.</h2>
+            <div class="search-bar">
+                <input type="text" placeholder="Enter your pincode">
+                <button>Find Gardeners</button>
+            </div>
+        </section>
+
+        <section class="featured-gardeners">
+            <h2>Meet Our Experienced Gardeners</h2>
+            <div class="gardener-profiles">
+                <!-- Gardener Profile Template -->
+                <div class="gardener-profile" data-pincode="110001">
+                    <img src="male gardner.jpeg" alt="Gardener 1">
+                    <h3>John Doe</h3>
+                    <p><strong>Experience:</strong> 5 years</p>
+                    <p><strong>Services Offered:</strong> Planting, Pruning, Lawn Maintenance, Pest Control</p>
+                    <p><strong>Rating:</strong> ★★★★☆ (4.0/5)</p>
+                    
+                    <a href="session.html"><button>Book Now</button></a>
+                </div>
+
+                <div class="gardener-profile" data-pincode="110002">
+                    <img src="male gardner.jpeg" alt="Gardener 2">
+                    <h3>Jane Smith</h3>
+                    <p><strong>Experience:</strong> 7 years</p>
+                    <p><strong>Services Offered:</strong> Garden Design, Planting, Irrigation, Landscaping</p>
+                    <p><strong>Rating:</strong> ★★★★★ (4.8/5)</p>
+                    <a href="session.html"><button>Book Now</button></a>
+                </div>
+
+                <div class="gardener-profile" data-pincode="110001">
+                    <img src="male gardner.jpeg" alt="Gardener 3">
+                    <h3>Michael Brown</h3>
+                    <p><strong>Experience:</strong> 3 years</p>
+                    <p><strong>Services Offered:</strong> Lawn Maintenance, Irrigation</p>
+                    <p><strong>Rating:</strong> ★★★★☆ (4.2/5)</p>
+                   
+                    <a href="session.html"><button>Book Now</button></a>
+                </div>
+
+                <div class="gardener-profile" data-pincode="110003">
+                    <img src="female gardner.jpeg" alt="Gardener 4">
+                    <h3>Emily Davis</h3>
+                    <p><strong>Experience:</strong> 8 years</p>
+                    <p><strong>Services Offered:</strong> Landscaping, Garden Design</p>
+                    <p><strong>Rating:</strong> ★★★★★ (4.9/5)</p>
+                    <a href="session.html"><button>Book Now</button></a>
+                </div>
+
+                <div class="gardener-profile" data-pincode="110002">
+                    <img src="male gardner.jpeg" alt="Gardener 5">
+                    <h3>Chris White</h3>
+                    <p><strong>Experience:</strong> 6 years</p>
+                    <p><strong>Services Offered:</strong> Planting, Pruning, Pest Control</p>
+                    <p><strong>Rating:</strong> ★★★★☆ (4.3/5)</p>
+                    <a href="session.html"><button>Book Now</button></a>
+                </div>
+
+                <div class="gardener-profile" data-pincode="110001">
+                    <img src="female gardner.jpeg" alt="Gardener 6">
+                    <h3>Sarah Johnson</h3>
+                    <p><strong>Experience:</strong> 4 years</p>
+                    <p><strong>Services Offered:</strong> Garden Design, Lawn Maintenance</p>
+                    <p><strong>Rating:</strong> ★★★★☆ (4.1/5)</p>
+                    
+                    <<a href="session.html"><button>Book Now</button></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Urban Gardener. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelector('.search-bar button').addEventListener('click', function () {
+            const pincode = document.querySelector('.search-bar input').value;
+            const gardenerProfiles = document.querySelectorAll('.gardener-profile');
+
+            gardenerProfiles.forEach(profile => {
+                const gardenerPincode = profile.getAttribute('data-pincode');
+
+                if (gardenerPincode === pincode) {
+                    profile.style.display = 'block';
+                } else {
+                    profile.style.display = 'none';
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

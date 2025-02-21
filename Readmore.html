@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read More - Urban Gardening</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .feature-section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 40px 0;
+        }
+
+        .feature-card {
+            width: 300px;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        .feature-card img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 15px;
+        }
+
+        .feature-card h3 {
+            color: #2E7D32;
+            margin-bottom: 10px;
+        }
+
+        .main-content {
+            text-align: center;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .main-content h1 {
+            color: #2E7D32;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .main-content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        footer {
+            background-color: #2E7D32;
+            color: white;
+            padding: 40px 20px 20px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .footer-container h3 {
+            margin-bottom: 15px;
+        }
+
+        .footer-container ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-container ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-container a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-container a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .footer-bottom a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="log.jpg" alt="Urban Gardener Logo" class="logo-img">
+                <div class="logo">Urban Gardening</div>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="get.in.touch.html">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="signin.html"><button>Sign In</button></a>
+                <a href="sign_up.html"><button>Sign Up</button></a>
+            </div>
+        </nav>
+    </header>
+    <style>
+        .feature-card img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card img:hover {
+            transform: scale(1.05);
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+
+
+
+    <main class="main-content">
+        <h1>Unlock the Benefits of Urban Gardening</h1>
+        <p>As a member of our urban gardening community, you'll gain access to a wealth of resources, exclusive offers, and a supportive network of fellow gardeners.</p>
+
+        <div class="feature-section">
+            <div class="feature-card">
+                <img src="gardern tips.jpeg" alt="Leaf Icon">
+                <h3>Gardening Tips</h3>
+                <p>Discover expert-curated gardening tips and tricks to help your urban oasis thrive.</p>
+            </div>
+
+            <div class="feature-card">
+                <img src="Community Gardening Fun.jpeg" alt="People Icon">
+                <h3>Community Forums</h3>
+                <p>Connect with fellow urban gardeners, share ideas, and get support in our vibrant community forums.</p>
+            </div>
+
+            <div class="feature-card">
+                <img src="Exclusive Offers.jpeg" alt="Gift Box Icon">
+                <h3>Exclusive Offers</h3>
+                <p>Take advantage of special discounts, product bundles, and other exclusive offers for our community members.</p>
+            </div>
+
+            <div class="feature-card">
+                <img src="Seasonal Growing Guide.jpeg" alt="Leaf Icon">
+                <h3>Seasonal Growing Guide</h3>
+                <p>Learn what to plant each season with our comprehensive growing guides and calendars.</p>
+            </div>
+
+            <div class="feature-card">
+                <img src="Plant Care Library.jpeg" alt="Leaf Icon">
+                <h3>Plant Care Library</h3>
+                <p>Access our extensive library of plant care instructions and maintenance tips.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h3>Urban Garden</h3>
+                <p>Connecting urban dwellers with nature and expert gardeners.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Plant Health Diagnosis</a></li>
+                    <li><a href="#">Shop</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>Email: info@urbangarden.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Urban Garden. All rights reserved.</p>
+            <p><a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a></p>
+        </div>
+    </footer>
+</body>
+</html>
+
+

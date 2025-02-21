@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gardening Essentials</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="log.jpg" alt="Urban Gardener Logo" class="logo-img">
+                <div class="logo">Urban Gardening</div>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="get.in.touch.html">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="signin.html"><button>Sign In</button></a>
+                <a href="sign_up.html"><button>Sign Up</button></a>
+            </div>
+           
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <h1>Discover Urban Gardening Essentials</h1>
+       <center> <p>Browse our curated selection of gardening tools, plants, and accessories to elevate your urban oasis.</p></center>
+       
+       <input type="text" id="searchBar" onkeyup="searchProducts()" placeholder="Search for products...">
+    </section>
+
+    <section class="products" id="productContainer">
+        <div class="product-card" data-name="Organic Fertilizer">
+            <img src="organic.jpeg" alt="Organic Fertilizer">
+            <h3>Organic Fertilizer</h3>
+            <p>Nourish your plants with our premium organic fertilizer, formulated to promote healthy growth and vibrant blooms.</p>
+            <p class="price">$29.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <!-- Add more products as needed -->
+        <div class="product-card" data-name="Garden Tools Set">
+            <img src="Garden Tools Set.jpeg" alt="Garden Tools Set">
+            <h3>Garden Tools Set</h3>
+            <p>Our comprehensive garden tools set includes everything you need for efficient and effective gardening.</p>
+            <p class="price">$59.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-name="Compost Bin">
+            <img src="Compost Bin.jpeg" alt="Compost Bin">
+            <h3>Compost Bin</h3>
+            <p>Recycle your organic waste with our sturdy compost bin, perfect for any garden.</p>
+            <p class="price">$39.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-name="Watering Can">
+            <img src="water can.jpeg" alt="Watering Can">
+            <h3>Watering Can</h3>
+            <p>Water your plants with precision using our durable and stylish watering can.</p>
+            <p class="price">$19.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-name="Garden Hose">
+            <img src="Garden Hose.jpeg" alt="Garden Hose">
+            <h3>Garden Hose</h3>
+            <p>Keep your garden well-watered with our flexible and long-lasting garden hose.</p>
+            <p class="price">$25.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-name="Pruning Shears">
+            <img src="Pruning Shears.jpeg" alt="Pruning Shears">
+            <h3>Pruning Shears</h3>
+            <p>Maintain your plants with our high-quality pruning shears for clean cuts.</p>
+            <p class="price">$14.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-name="Gardening Gloves">
+            <img src="gloves.jpeg" alt="Gardening Gloves">
+            <h3>Gardening Gloves</h3>
+            <p>Protect your hands with our comfortable and durable gardening gloves.</p>
+            <p class="price">$9.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-name="Plant Pots">
+            <img src="plantpot.jpeg" alt="Plant Pots">
+            <h3>Plant Pots</h3>
+            <p>Showcase your plants with our stylish and eco-friendly plant pots.</p>
+            <p class="price">$24.99</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        
+        <script>
+            document.querySelectorAll('.add-to-cart').forEach(button => {
+                button.addEventListener('click', () => {
+                    window.location.href = 'bookings.html';
+                });
+            });
+        </script>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h3>Urban Garden</h3>
+                <p>Your one-stop shop for all gardening needs.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>Email: shop@urbangarden.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Urban Garden. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <style>
+        footer {
+            background-color: #2E7D32;
+            color: white;
+            padding: 40px 20px 20px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .footer-container div {
+            padding: 0 15px;
+        }
+
+        .footer-container h3 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .footer-container p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .footer-container ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-container ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-container ul li a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .footer-container ul li a:hover {
+            opacity: 0.8;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+    </style>
+
+    <footer>
+        <p>© 2024 Gardening Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function searchProducts() {
+            let input = document.getElementById('searchBar').value.toLowerCase();
+            let products = document.querySelectorAll('.product-card');
+            
+            products.forEach(product => {
+                let productName = product.getAttribute('data-name').toLowerCase();
+                if (productName.includes(input)) {
+                    product.style.display = '';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
