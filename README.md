@@ -15,6 +15,6 @@ Urban gardening addresses a growing need for green spaces in cities. With limite
 - HTML, CSS, JavaScript – Built a clean and user-friendly interface.
   ### **Backend:**
 - Node.js with Express.js (for handling API requests)
-- PostgreSQL (for storing user, gardener, and product data)
+- Mongo DB (for storing user, gardener, and product data)
 - AI Service using Python (for plant health diagnosis)
   
